@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b2b2b;
+}
+
+.container {
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 15px 50px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+    border: none;
+    background-color: #f5f5f5;
+    outline: none;
+    cursor: pointer;
+}
+
+select {
+    border: 1px solid #2b2b2b;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.options label,
+.options select {
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+input[type="color"] {
+    width: 40px;    
+    height: 28px;
+    border: none;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+#text-editor {
+    height: 50vh;
+    border: 1px solid #2b2b2b;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.active {
+    background-color: #e0e9ff;
+}
